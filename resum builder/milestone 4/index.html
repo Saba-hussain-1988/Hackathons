@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Interactive Resume Builder</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="form">
+            <h1>Interactive Resume Builder</h1>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter your age">
+
+            <label for="gender">Gender:</label> 
+            <label><input type="radio" name="gender" value="m">Male</label> 
+            <label><input type="radio" name="gender" value="f"> Female</label>
+
+            <label for="education">Education:</label>
+            <textarea type="textarea" id="education" placeholder="Education"></textarea>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" placeholder="Enter your contact number">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="skills">Skills:</label>
+            <textarea type="textarea" id="skills" placeholder="write about your skills"></textarea>
+
+            <label for="experience">Work Experience:</label>
+            <textarea type="textarea" id="experience" placeholder="write about your work Experience"> </textarea>     
+
+            <label for="image">Upload Your Photo:</label>
+            <input type="file" id="image" accept="image/*">
+
+            <button id="generateResume">Generate Resume</button>
+        </div>
+
+        <div class="resume">
+            <h1>Generated Resume</h1>
+            <div id="resumeOutput">
+                <img id="displayImage" alt="User Image" style=" width: 100%; height: 100%; object-fit: cover; border: 3px solid darkgreen; border-radius: 50%;">
+                <p><strong>Name:</strong> <span id="displayName" contenteditable="true"></span></p>
+                <p><strong>Age:</strong> <span id="displayAge" contenteditable="true"></span></p>
+                <p><strong>Gender:</strong> <span id="displayGender" contenteditable="true"></span></p>
+                <p><strong>Education: <span id="displayEducation" contenteditable="true"></span></strong></p>
+                <p><strong>Contact Number:</strong> <span id="displayContact" contenteditable="true"></span></p>
+                <p><strong>Email:</strong> <span id="displayEmail" contenteditable="true"></span></p>
+                <p><strong>Skills:</strong> <span id="displaySkills" contenteditable="true"></span></p>
+                <p><strong>Experience:</strong> <span id="displayExperience" contenteditable="true"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="code.js" type="module"></script>
+</body>
+</html>
