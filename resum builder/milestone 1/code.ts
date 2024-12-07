@@ -1,5 +1,5 @@
 const toggleBut = document.getElementById("toggle-skills") as HTMLButtonElement;
-const skillsSec = document.getElementById("skills") as HTMLElement;
+const skillsSec = document.getElementById("skills") as HTMLUListElement;
 
 toggleBut.addEventListener("click", () => {
     if (skillsSec.style.display === "none") {
@@ -10,7 +10,7 @@ toggleBut.addEventListener("click", () => {
 });
 
 const toggleExpo = document.getElementById("toggle-experience") as HTMLButtonElement;
-const expoSec = document.getElementById("expo") as HTMLElement;
+const expoSec = document.getElementById("expo") as HTMLUListElement;
 
 toggleExpo.addEventListener("click", () => {
     if (expoSec.style.display === "none") {
