@@ -1,101 +1,261 @@
-import Image from "next/image";
+// import Image from "next/image";
+// import HeroSection from "./components/heroSection";
+// import Product from "./components/product";
+
+// export default function Home() {
+//   return (
+//     <div className="w-[1920px] h-[48 98px] flex flex-col justify-center gap-[150px] ">
+//       <HeroSection />
+//       <Product />
+//     </div>
+//   );
+// }
+
+
+
+import ProductsSection from "./components/productsComponent";
+import HeroImg from "../../public/Image/Product Image.png";
+import Logo1 from "../../public/logos/Logo (2).png";
+import Logo2 from "../../public/logos/Logo (3).png";
+import Logo3 from "../../public/logos/Logo (4).png";
+import Logo4 from "../../public/logos/Logo (5).png";
+import Logo5 from "../../public/logos/Logo (6).png";
+import Logo6 from "../../public/logos/Logo (7).png";
+import Logo7 from "../../public/logos/Logo (8).png";
+import Feature1 from "../../public/Image/p1.png";
+import Feature2 from "../../public/Image/p5.png";
+import Feature3 from "../../public/Image/item-category 1.png";
+import Feature4 from "../../public/Image/p2.png";
+import TopCategory1 from "../../public/Image/category3.png";
+import TopCategory2 from "../../public/Image/category2.png";
+import TopCategory3 from "../../public/Image/Rectangle 6.png";
+import Explore1 from "../../public/Image/item-category 1.png";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      <div className="flex flex-col items-center px-4 md:px-8 lg:px-16">
+        {/* Main Container */}
+        <div className="max-w-[1321px] w-full">
+          {/* Header Section */}
+          <section className="flex flex-col md:flex-row items-center justify-between py-10 px-20 bg-[#F0F2F3]">
+            <div className="text-center md:text-left">
+              <h1 className="text-4xl font-bold text-gray-900 leading-tight">
+                Best Furniture Collection <br /> For Your Interior.
+              </h1>
+              <button className="mt-6 px-6 py-3 bg-blue-500 text-white rounded-md shadow-lg hover:bg-blue-600">
+                Shop Now →
+              </button>
+            </div>
+            <div className="mt-8 md:mt-0">
+              <div className="w-[434px] h-[500px]">
+                <img className="w-full h-full" src={HeroImg.src} alt="" />
+              </div>
+            </div>
+          </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          {/* Logos Section */}
+          <section className="flex flex-wrap items-center justify-between gap-6 mb-10 mt-8">
+            <div className="w-[85px] h-[87px] ">
+              <img className="w-full h-full" src={Logo1.src} alt="" />
+            </div>
+            <div className="w-[107px] h-[109px] ">
+              <img className="w-full h-full" src={Logo2.src} alt="" />
+            </div>
+            <div className="w-[135px] h-[139px] ">
+              <img className="w-full h-full" src={Logo3.src} alt="" />
+            </div>
+            <div className="w-[63px] h-[65px] ">
+              <img className="w-full h-full" src={Logo4.src} alt="" />
+            </div>
+            <div className="w-[98px] h-[101px] ">
+              <img className="w-full h-full" src={Logo5.src} alt="" />
+            </div>
+            <div className="w-[113px] h-[115px] ">
+              <img className="w-full h-full" src={Logo6.src} alt="" />
+            </div>
+            <div className="w-[84px] h-[87px] ">
+              <img className="w-full h-full" src={Logo7.src} alt="" />
+            </div>
+          </section>
+
+          {/* Featured Products Section */}
+          <section>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-6">
+              Featured Products
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Product 1 */}
+              <div className="w-full max-w-[312px] mx-auto h-auto flex flex-col items-center rounded-md">
+                {/* Product Image */}
+                <div className="w-full h-[312px] bg-gray-300 rounded-md mb-2">
+                  <img
+                    className="w-full h-full object-cover rounded-md"
+                    src={Feature1.src}
+                    alt="Product 1"
+                  />
+                </div>
+                {/* Product Info */}
+                <p className="text-lg font-medium text-gray-700">
+                  Library Stool Chair
+                </p>
+                <p className="text-gray-500">$20</p>
+              </div>
+              {/* Product 2 */}
+              <div className="w-full max-w-[312px] mx-auto h-auto flex flex-col items-center rounded-md">
+                {/* Product Image */}
+                <div className="w-full h-[312px] bg-gray-300 rounded-md mb-2">
+                  <img
+                    className="w-full h-full object-cover rounded-md"
+                    src={Feature2.src}
+                    alt="Product 2"
+                  />
+                </div>
+                {/* Product Info */}
+                <p className="text-lg font-medium text-gray-700">
+                  Library Stool Chair
+                </p>
+                <p className="text-gray-500">$20</p>
+              </div>
+              {/* Product 3 */}
+              <div className="w-full max-w-[312px] mx-auto h-auto flex flex-col items-center rounded-md">
+                {/* Product Image */}
+                <div className="w-full h-[312px] bg-gray-300 rounded-md mb-2">
+                  <img
+                    className="w-full h-full object-cover rounded-md"
+                    src={Feature3.src}
+                    alt="Product 3"
+                  />
+                </div>
+                {/* Product Info */}
+                <p className="text-lg font-medium text-gray-700">
+                  Library Stool Chair
+                </p>
+                <p className="text-gray-500">$20</p>
+              </div>
+              {/* Product 4 */}
+              <div className="w-full max-w-[312px] mx-auto h-auto flex flex-col items-center rounded-md">
+                {/* Product Image */}
+                <div className="w-full h-[312px] bg-gray-300 rounded-md mb-2">
+                  <img
+                    className="w-full h-full object-cover rounded-md"
+                    src={Feature4.src}
+                    alt="Product 4"
+                  />
+                </div>
+                {/* Product Info */}
+                <p className="text-lg font-medium text-gray-700">
+                  Library Stool Chair
+                </p>
+                <p className="text-gray-500">$20</p>
+              </div>
+            </div>
+          </section>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="flex flex-col items-center px-4 md:px-8 lg:px-16">
+        {/* Main Container */}
+        <div className="max-w-[1321px] w-full">
+          {/* Top Categories Section */}
+          <section className="py-10">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
+              Top Categories
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Category Card */}
+              <div className="relative rounded-lg w-full max-w-[424px] mx-auto h-[300px] sm:h-[424px] overflow-hidden">
+                {/* Background Image */}
+                <img
+                  src={TopCategory1.src}
+                  alt="Category"
+                  className="w-full h-full object-cover"
+                />
+                {/* Gradient Overlay */}
+                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4 text-white">
+                  <h3 className="text-lg font-medium">Wing Chair</h3>
+                  <p className="text-sm">3,584 Products</p>
+                </div>
+              </div>
+              <div className="relative rounded-lg w-full max-w-[424px] mx-auto h-[300px] sm:h-[424px] overflow-hidden">
+                {/* Background Image */}
+                <img
+                  src={TopCategory2.src}
+                  alt="Category"
+                  className="w-full h-full object-cover"
+                />
+                {/* Gradient Overlay */}
+                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4 text-white">
+                  <h3 className="text-lg font-medium">Wooden Chair</h3>
+                  <p className="text-sm">157 Products</p>
+                </div>
+              </div>
+              <div className="relative rounded-lg w-full max-w-[424px] mx-auto h-[300px] sm:h-[424px] overflow-hidden">
+                {/* Background Image */}
+                <img
+                  src={TopCategory3.src}
+                  alt="Category"
+                  className="w-full h-full object-cover"
+                />
+                {/* Gradient Overlay */}
+                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4 text-white">
+                  <h3 className="text-lg font-medium">Desk Chair</h3>
+                  <p className="text-sm">154 Products</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Explore Styles Section */}
+          <section className="py-10">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-6">
+              Explore New and Popular Styles
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 p-4">
+              {/* Large Featured Box */}
+              <div className="col-span-1 md:col-span-2 bg-gray-300 rounded-lg w-full h-auto">
+                <img
+                  src={Explore1.src}
+                  alt=""
+                  className="w-full h-auto object-cover rounded-lg"
+                />
+              </div>
+
+              {/* Smaller Boxes */}
+              <div className="col-span-1 md:col-span-2 grid grid-cols-2 gap-4">
+                <div className="bg-gray-300 rounded-lg w-full h-auto">
+                  <img
+                    src={Feature1.src}
+                    alt=""
+                    className="w-full h-auto object-cover rounded-lg"
+                  />
+                </div>
+                <div className="bg-gray-300 rounded-lg w-full h-auto">
+                  <img
+                    src={Feature2.src}
+                    alt=""
+                    className="w-full h-auto object-cover rounded-lg"
+                  />
+                </div>
+                <div className="bg-gray-300 rounded-lg w-full h-auto">
+                  <img
+                    src={Feature3.src}
+                    alt=""
+                    className="w-full h-auto object-cover rounded-lg"
+                  />
+                </div>
+                <div className="bg-gray-300 rounded-lg w-full h-auto">
+                  <img
+                    src={Feature4.src}
+                    alt=""
+                    className="w-full h-auto object-cover rounded-lg"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <ProductsSection />
     </div>
   );
 }
