@@ -86,13 +86,13 @@ export default function Header(){
               <Link href={"/"} >Shop</Link>
             </li>
             <li className="w-[53px] h-[15px] font-inter font-medium text-[14px] leading-[110%] capitalize text-[#636270] hover:text-[#007580] ">
-              <Link href={"/"} >Product</Link>
+              <Link href={"/product"} >Product</Link>
             </li>
             <li className="w-[42px] h-[15px] font-inter font-medium text-[14px] leading-[110%] capitalize text-[#636270] hover:text-[#007580] ">
               <Link href={"/"} >Pages</Link>
             </li>
             <li className="w-[41px] h-[15px] font-inter font-medium text-[14px] leading-[110%] capitalize text-[#636270] hover:text-[#007580] ">
-              <Link href={"./about"} >About</Link>
+              <Link href={"/about"} >About</Link>
             </li>
             </ul>
 

@@ -10,9 +10,14 @@ import fLogo2 from "../../../public/logos/Group 12.png"
 import foLgo3 from "../../../public/logos/group12.png"
 import fLogo4 from "../../../public/logos/Union.png"
 
+
 export default function Footer (){
   return (
-    <div className="absolute flex flex-col items-start gap-6 w-[350px] h-[198px] ml-[300px] mt-[80px]">
+    // main footer
+    <div className="absolute w-[1920px] h-[418px] ">
+      {/* upper footer portion */}
+      <div className="absolute w-[1920px] h-[343px] flex flex-row justify-between items-center px-[300px] py-[100px] border-2">
+    <div className="absolute flex flex-col items-start gap-6 w-[350px] h-[198px]">
         {/* <!-- Logo Section --> */}
         <div className="flex items-center w-[168px] h-[40px]">
             {/* <!-- Logo Icon --> */}
@@ -52,11 +57,12 @@ export default function Footer (){
           </div>
         </div>
 
+        </div>
 
         {/*Footer second column  */}
         <div className="absolute flex flex-col items-start gap-5 w-[105px] h-[203px] ml-[440px]">
-  {/* <!-- Category --> */}
-  <div className="text-[#9A9CAA] font-inter font-medium text-[14px] leading-[110%] tracking-[0.06em] uppercase w-[82px] h-[15px]">
+          {/* <!-- Category --> */}
+        <div className="text-[#9A9CAA] font-inter font-medium text-[14px] leading-[110%] tracking-[0.06em] uppercase w-[82px] h-[15px]">
     Category
   </div>
 
@@ -92,7 +98,7 @@ export default function Footer (){
       Park Bench
     </div>
   </div>
-</div>
+        </div>
 
 
 {/* footer third column */}
@@ -153,8 +159,12 @@ export default function Footer (){
   </p>
 </div>
 
+    
+    </div>
 
-<footer className="absolute flex items-center justify-between px-[300px] py-[24px] w-[1920px] h-[75px] top-[343px] bg-white border-t-2 ">
+
+ {/* bottom footer */}
+<footer className="absolute flex items-center justify-between px-[300px] py-[24px] w-[1920px] h-[75px] top-[343px] bg-white  ">
   {/* <!-- Left Text --> */}
   <p className="text-[14px] font-normal leading-[21px] text-[#9A9CAA] text-nowrap">
     © 2021 - Blogy - Designed & Developed by Zakirsoft

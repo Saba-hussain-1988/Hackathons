@@ -1,318 +1,322 @@
-import React from "react";
-import Feature1 from "../Images/FeatureProduct1.png";
-import Feature2 from "../Images/FeatureProduct2.png";
-import Feature3 from "../Images/Explore1.png";
-import Feature4 from "../Images/FeatureProduct4.png";
-import Feature5 from "../Images/TopCategory1.png";
-import Feature6 from "../Images/Image (1).png";
-import Feature7 from "../Images/Feature7.png";
-import Feature8 from "../Images/FeatureProduct1.png";
-import News1 from "../Images/TopCategory2.png";
-import News2 from "../Images/TopCategory1.png";
-import News3 from "../Images/FeatureProduct2.png";
+import Image from "next/image";
+import Feature1 from "../../../public/Image/p1.png";
+import Feature2 from "../../../public/Image/p4.png";
+import Feature3 from "../../../public/Image/item-category1.png";
+import Feature4 from "../../../public/Image/p2.png";
+import Feature5 from "../../../public/Image/category2.png";
+import Feature6 from "../../../public/Image/p3.png";
+import Feature7 from "../../../public/Image/Imagenew.png"
+import Feature8 from "../../../public/image/category3.png";
+import Feature9 from "../../../public/image/Rectangle6.png";
+import buyCart from "../../../public/vectors/Buy 3.png";
+import cart from "../../../public/vectors/Buy 2.png";
+
 
 // import News4 from "../Images/"
 export default function Product(){
   return (
-    <div>
-      {/* Row 1 */}
-      <div className="flex justify-center mt-5">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-          {/* Product Card 1 */}
-          <div className="w-[312px] h-[388px] flex flex-col bg-white rounded-lg shadow-lg hover:scale-105 transition-transform overflow-hidden">
-            {/* Image Section */}
-            <div className="w-full h-[312px] bg-yellow-200 rounded-t-lg">
-              <img
-                src={Feature1.src}
-                alt=""
-                className="object-cover w-full h-full"
-              />
-            </div>
-            {/* Content Section */}
-            <div className="p-4 flex flex-col justify-between flex-grow">
-              <div>
-                <h3 className="text-lg font-medium">Library Stool Chair</h3>
-                <p className="text-xl font-bold">$20</p>
-                <p className="line-through text-sm text-gray-500">$39</p>
-              </div>
-              <div className="w-10 h-10 bg-gray-400 rounded-full self-end mt-2"></div>{" "}
-              {/* Placeholder for cart logo */}
-            </div>
-          </div>
+    <div className="pt-[300px] w-[1920px] h-[2364px]">
+   <div className="flex flex-col pb-0 ">
+    {/* row  */}
+    <div className="w-[1920px] h-[461px] px-[300px] flex flex-col justify-between ">
+     {/* heading */}
+    <h2 className="text-left text-2xl font-semibold mb-8">Our Products</h2>
+    {/* row 1 */}
+    <div className="flex flex-row justify-between items-end w-[1321px] h-[377px]">
+              {/* Product list goes here */}
 
-          {/* Product Card 2 */}
-          <div className="w-[312px] h-[388px] flex flex-col bg-white rounded-lg shadow-lg hover:scale-105 transition-transform overflow-hidden">
-            <div className="w-full h-[312px] bg-blue-200 rounded-t-lg">
-              <img
-                src={Feature2.src}
-                alt=""
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="p-4 flex flex-col justify-between flex-grow">
-              <div>
-                <h3 className="text-lg font-medium">Library Stool Chair</h3>
-                <p className="text-xl font-bold">$20</p>
-                <p className="line-through text-sm text-gray-500">$39</p>
+              {/* Product 1 */}
+              <div className="w-[312px] h-[377px] flex flex-col p-0 mr-[25px] items-start">
+                {/* Image n details */}
+                <div className="w-[312px] h-[312px] bg-gray-300 rounded mb-2">
+                  <Image className="w-[312px] h-[312px] object-cover rounded-md" src={Feature1} alt="Product 1"/>
+                </div>
+                {/* Product Info */}
+                <div className="w-[312px] h-[75px] flex flex-row justify-between ">
+                  <div className="w-[256px] h-[51px] flex flex-col justify-between items-start ">
+                <p className="w-[256px] h-[21px] text-lg font-[16px] text-gray-700">
+                  Library Stool Chair
+                </p>
+                <p className="text-black font-semibold">$20</p>
+                </div>
+                <div className="w-[44px] h-[44px] rounded-md bg-[#029fae] flex justify-center items-center">
+                  <Image src={buyCart} alt="" className="w-[24px] h-[24px] "/>
+                </div>
               </div>
-              <div className="w-10 h-10 bg-gray-400 rounded-full self-end mt-2"></div>
-            </div>
-          </div>
+              </div>
 
-          {/* Product Card 3 */}
-          <div className="w-[312px] h-[388px] flex flex-col bg-white rounded-lg shadow-lg hover:scale-105 transition-transform overflow-hidden">
-            <div className="w-full h-[312px] bg-green-200 rounded-t-lg">
-              <img
-                src={Feature3.src}
-                alt=""
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="p-4 flex flex-col justify-between flex-grow">
-              <div>
-                <h3 className="text-lg font-medium">Library Stool Chair</h3>
-                <p className="text-xl font-bold">$20</p>
-                <p className="line-through text-sm text-gray-500">$39</p>
-              </div>
-              <div className="w-10 h-10 bg-gray-400 rounded-full self-end mt-2"></div>
-            </div>
-          </div>
 
-          {/* Product Card 4 */}
-          <div className="w-[312px] h-[388px] flex flex-col bg-white rounded-lg shadow-lg hover:scale-105 transition-transform overflow-hidden">
-            <div className="w-full h-[312px] bg-red-200 rounded-t-lg">
-              <img
-                src={Feature4.src}
-                alt=""
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="p-4 flex flex-col justify-between flex-grow">
-              <div>
-                <h3 className="text-lg font-medium">Library Stool Chair</h3>
-                <p className="text-xl font-bold">$20</p>
-                <p className="line-through text-sm text-gray-500">$39</p>
+              {/* Product 2 */}
+              <div className="w-[312px] h-[377px]  flex flex-col p-0 items-start">
+                {/* Product Image */}
+                <div className="w-[312px] h-[312px] bg-gray-300 rounded-md mb-2">
+                  <Image
+                    className="w-[312px] h-[312px] object-cover rounded-md"
+                    src={Feature2}
+                    alt="Product 2"
+                  />
+                </div>
+                {/* Product Info */}
+                <div className="w-[312px] h-[75px] flex flex-row justify-between ">
+                  <div className="w-[256px] h-[51px] flex flex-col justify-between items-start ">
+                <p className="w-[256px] h-[21px] text-lg font-[16px] text-gray-700">
+                  Library Stool Chair
+                </p>
+                <p className="text-black font-semibold">$20</p>
+                </div>
+                <div className="w-[44px] h-[44px] rounded-md  flex justify-center items-center">
+                  <Image src={cart} alt="" className="w-[24px] h-[24px] "/>
+                </div>
               </div>
-              <div className="w-10 h-10 bg-gray-400 rounded-full self-end mt-2"></div>
-            </div>
-          </div>
-        </div>
+              </div>
+
+
+              {/* Product 3 */}
+              <div className="-w-[312px] mx-auto h-[377px] flex flex-col p-0 items-start">
+                {/* Product Image */}
+                <div className="w-[312px] h-[312px] bg-gray-300 rounded-md mb-2">
+                  <Image className="w-[312px] h-[312px] object-cover rounded-md" src={Feature3} alt="Product 3" 
+                  />
+                </div>
+                {/* Product Info */}
+                <div className="w-[312px] h-[75px] flex flex-row justify-between ">
+                  <div className="w-[256px] h-[51px] flex flex-col justify-between items-start ">
+                <p className="w-[256px] h-[21px] text-lg font-[16px] text-gray-700">
+                  Library Stool Chair
+                </p>
+                <p className="text-black font-semibold">$20</p>
+                </div>
+                <div className="w-[44px] h-[44px] rounded-md  flex justify-center items-center">
+                  <Image src={cart} alt="" className="w-[24px] h-[24px] "/>
+                </div>
+              </div>
+              </div>
+
+
+              {/* Product 4 */}
+              <div className="w-[312px]  h-[377px] flex flex-col p-0 items-start">
+                {/* Product Image */}
+                <div className="w-[312px] h-[312px] bg-gray-300 rounded-md mb-2">
+                  <Image
+                    className="w-[312px] h-[312px] object-cover rounded-md"
+                    src={Feature4}
+                    alt="Product 4"
+                  />
+                </div>
+                {/* Product Info */}
+                <div className="w-[312px] h-[75px] flex flex-row justify-between ">
+                  <div className="w-[256px] h-[51px] flex flex-col justify-between items-start ">
+                <p className="w-[256px] h-[21px] text-lg font-[16px] text-gray-700">
+                  Library Stool Chair
+                </p>
+                <p className="text-black font-semibold">$20</p>
+                </div>
+                <div className="w-[44px] h-[44px] rounded-md  flex justify-center items-center">
+                  <Image src={cart} alt="" className="w-[24px] h-[24px] "/>
+                </div>
+              </div>
+              </div>
       </div>
 
-      {/* Row 2 */}
-      <div className="flex justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-          {/* Product Card 1 */}
-          <div className="w-[312px] h-[388px] flex flex-col bg-white rounded-lg shadow-lg hover:scale-105 transition-transform overflow-hidden">
-            {/* Image Section */}
-            <div className="w-full h-[312px] bg-yellow-200 rounded-t-lg">
-              <img
-                src={Feature5.src}
-                alt=""
-                className="object-cover w-full h-full"
-              />
-            </div>
-            {/* Content Section */}
-            <div className="p-4 flex flex-col justify-between flex-grow">
-              <div>
-                <h3 className="text-lg font-medium">Library Stool Chair</h3>
-                <p className="text-xl font-bold">$20</p>
-                <p className="line-through text-sm text-gray-500">$39</p>
-              </div>
-              <div className="w-10 h-10 bg-gray-400 rounded-full self-end mt-2"></div>{" "}
-              {/* Placeholder for cart logo */}
-            </div>
-          </div>
-
-          {/* Product Card 2 */}
-          <div className="w-[312px] h-[388px] flex flex-col bg-white rounded-lg shadow-lg hover:scale-105 transition-transform overflow-hidden">
-            <div className="w-full h-[312px] bg-blue-200 rounded-t-lg">
-              <img
-                src={Feature6.src}
-                alt=""
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="p-4 flex flex-col justify-between flex-grow">
-              <div>
-                <h3 className="text-lg font-medium">Library Stool Chair</h3>
-                <p className="text-xl font-bold">$20</p>
-                <p className="line-through text-sm text-gray-500">$39</p>
-              </div>
-              <div className="w-10 h-10 bg-gray-400 rounded-full self-end mt-2"></div>
-            </div>
-          </div>
-
-          {/* Product Card 3 */}
-          <div className="w-[312px] h-[388px] flex flex-col bg-white rounded-lg shadow-lg hover:scale-105 transition-transform overflow-hidden">
-            <div className="w-full h-[312px] bg-green-200 rounded-t-lg">
-              <img
-                src={Feature7.src}
-                alt=""
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="p-4 flex flex-col justify-between flex-grow">
-              <div>
-                <h3 className="text-lg font-medium">Library Stool Chair</h3>
-                <p className="text-xl font-bold">$20</p>
-                <p className="line-through text-sm text-gray-500">$39</p>
-              </div>
-              <div className="w-10 h-10 bg-gray-400 rounded-full self-end mt-2"></div>
-            </div>
-          </div>
-
-          {/* Product Card 4 */}
-          <div className="w-[312px] h-[388px] flex flex-col bg-white rounded-lg shadow-lg hover:scale-105 transition-transform overflow-hidden">
-            <div className="w-full h-[312px] bg-red-200 rounded-t-lg">
-              <img
-                src={Feature8.src}
-                alt=""
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="p-4 flex flex-col justify-between flex-grow">
-              <div>
-                <h3 className="text-lg font-medium">Library Stool Chair</h3>
-                <p className="text-xl font-bold">$20</p>
-                <p className="line-through text-sm text-gray-500">$39</p>
-              </div>
-              <div className="w-10 h-10 bg-gray-400 rounded-full self-end mt-2"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Row 3 */}
-      <div className="flex justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-          {/* Product Card 1 */}
-          <div className="w-[312px] h-[388px] flex flex-col bg-white rounded-lg shadow-lg hover:scale-105 transition-transform overflow-hidden">
-            {/* Image Section */}
-            <div className="w-full h-[312px] bg-yellow-200 rounded-t-lg">
-              <img
-                src={Feature1.src}
-                alt=""
-                className="object-cover w-full h-full"
-              />
-            </div>
-            {/* Content Section */}
-            <div className="p-4 flex flex-col justify-between flex-grow">
-              <div>
-                <h3 className="text-lg font-medium">Library Stool Chair</h3>
-                <p className="text-xl font-bold">$20</p>
-                <p className="line-through text-sm text-gray-500">$39</p>
-              </div>
-              <div className="w-10 h-10 bg-gray-400 rounded-full self-end mt-2"></div>{" "}
-              {/* Placeholder for cart logo */}
-            </div>
-          </div>
-
-          {/* Product Card 2 */}
-          <div className="w-[312px] h-[388px] flex flex-col bg-white rounded-lg shadow-lg hover:scale-105 transition-transform overflow-hidden">
-            <div className="w-full h-[312px] bg-blue-200 rounded-t-lg">
-              <img
-                src={Feature2.src}
-                alt=""
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="p-4 flex flex-col justify-between flex-grow">
-              <div>
-                <h3 className="text-lg font-medium">Library Stool Chair</h3>
-                <p className="text-xl font-bold">$20</p>
-                <p className="line-through text-sm text-gray-500">$39</p>
-              </div>
-              <div className="w-10 h-10 bg-gray-400 rounded-full self-end mt-2"></div>
-            </div>
-          </div>
-
-          {/* Product Card 3 */}
-          <div className="w-[312px] h-[388px] flex flex-col bg-white rounded-lg shadow-lg hover:scale-105 transition-transform overflow-hidden">
-            <div className="w-full h-[312px] bg-green-200 rounded-t-lg">
-              <img
-                src={Feature3.src}
-                alt=""
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="p-4 flex flex-col justify-between flex-grow">
-              <div>
-                <h3 className="text-lg font-medium">Library Stool Chair</h3>
-                <p className="text-xl font-bold">$20</p>
-                <p className="line-through text-sm text-gray-500">$39</p>
-              </div>
-              <div className="w-10 h-10 bg-gray-400 rounded-full self-end mt-2"></div>
-            </div>
-          </div>
-
-          {/* Product Card 4 */}
-          <div className="w-[312px] h-[388px] flex flex-col bg-white rounded-lg shadow-lg hover:scale-105 transition-transform overflow-hidden">
-            <div className="w-full h-[312px] bg-red-200 rounded-t-lg">
-              <img
-                src={Feature4.src}
-                alt=""
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="p-4 flex flex-col justify-between flex-grow">
-              <div>
-                <h3 className="text-lg font-medium">Library Stool Chair</h3>
-                <p className="text-xl font-bold">$20</p>
-                <p className="line-through text-sm text-gray-500">$39</p>
-              </div>
-              <div className="w-10 h-10 bg-gray-400 rounded-full self-end mt-2"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="flex flex-col items-center px-4 md:px-8 lg:px-16 bg-gray-50 py-16">
-        {/* Main Container */}
-        <div className="max-w-[1321px] w-full text-center">
-          {/* Subscribe Section */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-6">
-              Or Subscribe To The Newsletter
-            </h2>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-              <input
-                type="email"
-                placeholder="Email Address..."
-                className="w-full md:w-[400px] px-4 py-3 border border-gray-300 rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <button className="px-6 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600">
-                Submit
-              </button>
-            </div>
-          </section>
-
-          {/* Instagram Section */}
-          <section>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-6">
-              Follow Products And Discounts On Instagram
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-              {/* Placeholder Boxes */}
-              <div className="bg-gray-300 rounded-md w-full h-[150px] md:h-[200px]">
-                <img className="w-full h-full" src={News1.src} alt="" />
-              </div>
-              <div className="bg-gray-300 rounded-md w-full h-[150px] md:h-[200px]">
-                <img className="w-full h-full" src={News2.src} alt="" />
-              </div>
-              <div className="bg-gray-300 rounded-md w-full h-[150px] md:h-[200px]">
-                <img className="w-full h-full" src={News3.src} alt="" />
-              </div>
-              <div className="bg-gray-300 rounded-md w-full h-[150px] md:h-[200px]">
-                <img className="w-full h-full" src={Feature1.src} alt="" />
-              </div>
-              <div className="bg-gray-300 rounded-md w-full h-[150px] md:h-[200px]">
-                <img className="w-full h-full" src={Feature3.src} alt="" />
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
     </div>
+    {/* row 2 */}
+    <div className="w-[1321px] h-[461px] px-[300px] flex flex-row justify-between items-end ">
+   
+              {/* Product list goes here */}
+
+              {/* Product 1 */}
+              <div className="w-[312px] h-[377px] flex flex-col p-0 mr-[25px] items-start">
+                {/* Image n details */}
+                <div className="w-[312px] h-[312px] bg-gray-300 rounded mb-2">
+                  <Image className="w-[312px] h-[312px] object-cover rounded-md" src={Feature5} alt="Product 1"/>
+                </div>
+                {/* Product Info */}
+                <div className="w-[312px] h-[75px] flex flex-row justify-between ">
+                  <div className="w-[256px] h-[51px] flex flex-col justify-between items-start ">
+                <p className="w-[256px] h-[21px] text-lg font-[16px] text-gray-700">
+                  Library Stool Chair
+                </p>
+                <p className="text-black font-semibold">$20</p>
+                </div>
+                <div className="w-[44px] h-[44px] rounded-md bg-[#029fae] flex justify-center items-center">
+                  <Image src={buyCart} alt="" className="w-[24px] h-[24px] "/>
+                </div>
+              </div>
+              </div>
+
+
+              {/* Product 2 */}
+              <div className="w-[312px] h-[377px]  flex flex-col p-0 items-start">
+                {/* Product Image */}
+                <div className="w-[312px] h-[312px] bg-gray-300 rounded-md mb-2">
+                  <Image
+                    className="w-[312px] h-[312px] object-cover rounded-md"
+                    src={Feature6}
+                    alt="Product 2"
+                  />
+                </div>
+                {/* Product Info */}
+                <div className="w-[312px] h-[75px] flex flex-row justify-between ">
+                  <div className="w-[256px] h-[51px] flex flex-col justify-between items-start ">
+                <p className="w-[256px] h-[21px] text-lg font-[16px] text-gray-700">
+                  Library Stool Chair
+                </p>
+                <p className="text-black font-semibold">$20</p>
+                </div>
+                <div className="w-[44px] h-[44px] rounded-md  flex justify-center items-center">
+                  <Image src={cart} alt="" className="w-[24px] h-[24px] "/>
+                </div>
+              </div>
+              </div>
+
+
+              {/* Product 3 */}
+              <div className="-w-[312px] mx-auto h-[377px] flex flex-col p-0 items-start">
+                {/* Product Image */}
+                <div className="w-[312px] h-[312px] bg-gray-300 rounded-md mb-2">
+                  <Image className="w-[312px] h-[312px] object-cover rounded-md" src={Feature7} alt="Product 3" 
+                  />
+                </div>
+                {/* Product Info */}
+                <div className="w-[312px] h-[75px] flex flex-row justify-between ">
+                  <div className="w-[256px] h-[51px] flex flex-col justify-between items-start ">
+                <p className="w-[256px] h-[21px] text-lg font-[16px] text-gray-700">
+                  Library Stool Chair
+                </p>
+                <p className="text-black font-semibold">$20</p>
+                </div>
+                <div className="w-[44px] h-[44px] rounded-md  flex justify-center items-center">
+                  <Image src={cart} alt="" className="w-[24px] h-[24px] "/>
+                </div>
+              </div>
+              </div>
+
+
+              {/* Product 4 */}
+              <div className="w-[312px]  h-[377px] flex flex-col p-0 items-start">
+                {/* Product Image */}
+                <div className="w-[312px] h-[312px] bg-gray-300 rounded-md mb-2">
+                  <Image
+                    className="w-[312px] h-[312px] object-cover rounded-md"
+                    src={Feature1}
+                    alt="Product 4"
+                  />
+                </div>
+                {/* Product Info */}
+                <div className="w-[312px] h-[75px] flex flex-row justify-between ">
+                  <div className="w-[256px] h-[51px] flex flex-col justify-between items-start ">
+                <p className="w-[256px] h-[21px] text-lg font-[16px] text-gray-700">
+                  Library Stool Chair
+                </p>
+                <p className="text-black font-semibold">$20</p>
+                </div>
+                <div className="w-[44px] h-[44px] rounded-md  flex justify-center items-center">
+                  <Image src={cart} alt="" className="w-[24px] h-[24px] "/>
+                </div>
+              </div>
+              </div>
+    
+    </div>
+    {/* row 3 */}
+    <div className="w-[1321px] h-[461px] px-[300px] flex flex-row justify-between items-end ">
+    
+              {/* Product list goes here */}
+
+              {/* Product 1 */}
+              <div className="w-[312px] h-[377px] flex flex-col p-0 mr-[25px] items-start">
+                {/* Image n details */}
+                <div className="w-[312px] h-[312px] bg-gray-300 rounded mb-2">
+                  <Image className="w-[312px] h-[312px] object-cover rounded-md" src={Feature8} alt="Product 1"/>
+                </div>
+                {/* Product Info */}
+                <div className="w-[312px] h-[75px] flex flex-row justify-between ">
+                  <div className="w-[256px] h-[51px] flex flex-col justify-between items-start ">
+                <p className="w-[256px] h-[21px] text-lg font-[16px] text-gray-700">
+                  Library Stool Chair
+                </p>
+                <p className="text-black font-semibold">$20</p>
+                </div>
+                <div className="w-[44px] h-[44px] rounded-md bg-[#029fae] flex justify-center items-center">
+                  <Image src={buyCart} alt="" className="w-[24px] h-[24px] "/>
+                </div>
+              </div>
+              </div>
+
+
+              {/* Product 2 */}
+              <div className="w-[312px] h-[377px]  flex flex-col p-0 items-start">
+                {/* Product Image */}
+                <div className="w-[312px] h-[312px] bg-gray-300 rounded-md mb-2">
+                  <Image
+                    className="w-[312px] h-[312px] object-cover rounded-md"
+                    src={Feature2}
+                    alt="Product 2"
+                  />
+                </div>
+                {/* Product Info */}
+                <div className="w-[312px] h-[75px] flex flex-row justify-between ">
+                  <div className="w-[256px] h-[51px] flex flex-col justify-between items-start ">
+                <p className="w-[256px] h-[21px] text-lg font-[16px] text-gray-700">
+                  Library Stool Chair
+                </p>
+                <p className="text-black font-semibold">$20</p>
+                </div>
+                <div className="w-[44px] h-[44px] rounded-md  flex justify-center items-center">
+                  <Image src={cart} alt="" className="w-[24px] h-[24px] "/>
+                </div>
+              </div>
+              </div>
+
+
+              {/* Product 3 */}
+              <div className="-w-[312px] mx-auto h-[377px] flex flex-col p-0 items-start">
+                {/* Product Image */}
+                <div className="w-[312px] h-[312px] bg-gray-300 rounded-md mb-2">
+                  <Image className="w-[312px] h-[312px] object-cover rounded-md" src={Feature3} alt="Product 3" 
+                  />
+                </div>
+                {/* Product Info */}
+                <div className="w-[312px] h-[75px] flex flex-row justify-between ">
+                  <div className="w-[256px] h-[51px] flex flex-col justify-between items-start ">
+                <p className="w-[256px] h-[21px] text-lg font-[16px] text-gray-700">
+                  Library Stool Chair
+                </p>
+                <p className="text-black font-semibold">$20</p>
+                </div>
+                <div className="w-[44px] h-[44px] rounded-md  flex justify-center items-center">
+                  <Image src={cart} alt="" className="w-[24px] h-[24px] "/>
+                </div>
+              </div>
+              </div>
+
+
+              {/* Product 4 */}
+              <div className="w-[312px]  h-[377px] flex flex-col p-0 items-start">
+                {/* Product Image */}
+                <div className="w-[312px] h-[312px] bg-gray-300 rounded-md mb-2">
+                  <Image
+                    className="w-[312px] h-[312px] object-cover rounded-md"
+                    src={Feature9}
+                    alt="Product 4"
+                  />
+                </div>
+                {/* Product Info */}
+                <div className="w-[312px] h-[75px] flex flex-row justify-between ">
+                  <div className="w-[256px] h-[51px] flex flex-col justify-between items-start ">
+                <p className="w-[256px] h-[21px] text-lg font-[16px] text-gray-700">
+                  Library Stool Chair
+                </p>
+                <p className="text-black font-semibold">$20</p>
+                </div>
+                <div className="w-[44px] h-[44px] rounded-md  flex justify-center items-center">
+                  <Image src={cart} alt="" className="w-[24px] h-[24px] "/>
+                </div>
+              </div>
+              </div>
+     
+    </div>
+   </div>
+
+   </div>
   );
 }

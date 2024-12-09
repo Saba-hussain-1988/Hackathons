@@ -14,8 +14,8 @@ export default function HeroSection(){
                 <h1 className="absolute w-[557px] h-[198px] left-[70px] top-[267px] font-inter font-bold text-[60px] leading-[110%] capitalize text-[#272343]">
                   Best Furniture Collection for your interior.
                 </h1>
-                <button className="absolute flex flex-row justify-center items-center px-6 py-[14px] gap-5 w-[171px] h-[52px] left-[70px] top-[514px] bg-[#029FAE] rounded-lg">
-                  Button Text
+                <button className="absolute flex flex-row justify-center items-center px-6 py-[14px] gap-5 w-[171px] h-[52px] left-[70px] top-[514px] text-white bg-[#029FAE] rounded-lg">
+                  Shop Now
                 </button>
             </div>
 
