@@ -1,8 +1,7 @@
-import React from "react";
 
-export default function FAQs () {
+export default function FAQs() {
   return (
-    <div className="max-w-[1321px] mx-auto px-4 py-8">
+    <div className="w-[1920px] mx-auto pt-[300px] px-[300px] pb-[150px]">
       {/* Header */}
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4">Questions Looks Here</h2>
