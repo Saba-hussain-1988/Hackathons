@@ -1,5 +1,5 @@
 import Image from "next/image"
-import productImage from "../../../public/images/Product Image.png"
+import productImage from "../../../public/image/Product Image.png"
 
 export default function HeroSection(){
     return(
