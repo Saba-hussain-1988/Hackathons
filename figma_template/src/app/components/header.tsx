@@ -64,7 +64,7 @@ export default function Header() {
             {/* <!-- Cart --> */}
             <Image src={cart} alt="cart" className="w-[22px] h-[22px]" />
             <div className="w-[26px] h-[13px] font-inter font-medium text-[12px] leading-[110%] text-center capitalize text-[#272343] flex-none order-1 flex-grow-0">
-              Cart
+              <Link href={"/cart"} >Cart</Link>
             </div>
           </div>
           <Image src={NoIcon} alt="Number icon" className="w-[20px] h-[20px]" />

@@ -2,7 +2,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 2%;
-    background-color: rgb(133, 58, 58);
+    background-color: rgb(212, 236, 255);
 }
 
 #h1 {
@@ -12,10 +12,14 @@ body {
     padding-bottom: 2%;
 }
 h1 {
-    color: rgb(170, 255, 0);
+    color: rgb(64, 52, 191);
     margin: auto;
     text-align: center;
-    text-shadow: 0 0 10px rgb(244, 247, 228);
+    text-shadow: 0 0 10px rgb(100, 119, 211);
+}
+h3 {
+    font-size: larger;
+    color: rgb(55, 54, 54);
 }
 
 a{
@@ -27,14 +31,14 @@ a:hover {
 }
 
 button {
-    background-color: rgb(123, 247, 241);
-    border-radius: 100%;
-    padding-right: 10%;
-    padding-left: 10%;
+    background-color: rgb(153, 189, 252);
+    border-radius: 10px;
+    padding-right: 5%;
+    padding-left: 5%;
     text-align: center;
 }
 button:hover {
-    background-color: rgb(175, 255, 1);
+    background-color: rgb(233, 252, 193);
     color:rgb(77, 136, 116)
 }
 
@@ -42,48 +46,40 @@ button:hover {
     width: 100%;
     display: inline-flex;
     margin: 5px;
+    align-items: center;
     justify-items:  left;
+    justify-content: space-around;
+    border-style: double;
 }
 
 #pic-box {
-    width: 40%;
-    height: 40%;
-    border-radius: 30px;
-    border: 5px solid white;
-    background-color: rgb(180, 122, 45);
-    
+    width: 20%;
+    height: 20%;
 }
 #pic {
     width: 100%;
     height: 100%;
-    border-radius: 80px;
+    border-radius: 100%;
+    border: 2px solid rgb(43, 41, 41);
 }
 
 #personalInformation {
-    width: 60%;
+    width: 50%;
     box-sizing: auto;
-    background-color: aquamarine;
-    border: 5px solid white;
-    border-radius: 30px;
     text-align: left ;
     padding: 20px;
     padding-left: 40px;
+    border-left-style: double;
 }
 
 .education {
     width: 40%;
-    border: 5px solid white;
-    border-radius: 30px;
-    background-color: rgb(195, 255, 117);
     text-align: left;
     padding: 30px;
 }
 
 #goal {
     width: 40%;
-    border: 5px solid white;
-    border-radius: 30px;
-    background-color: rgb(92, 174, 250);
     text-align: left;
     padding: 30px;
 }
@@ -91,9 +87,6 @@ button:hover {
 #skill {
     width: 60%;
     box-sizing: auto;
-    background-color: rgb(223, 127, 255);
-    border: 5px solid white;
-    border-radius: 30px;
     text-align: left ;
     padding: 20px;
     padding-left: 40px;
@@ -105,17 +98,11 @@ button:hover {
 #award {
     width: 60%;
     padding: 30px;
-    border-radius: 30px;
-    border: 5px solid white;
-    background-color: rgb(255, 241, 88);
 }
 
 #experience {
     width: 40%;
     padding: 30px;
-    border-radius: 30px;
-    border: 5px solid white;
-    background-color: rgb(255, 113, 194);
 }
 #expo {
     display: none;
@@ -124,9 +111,6 @@ button:hover {
 #course {
     width: 40%;
     padding: 30px;
-    border-radius: 30px;
-    border: 5px solid white;
-    background-color: rgb(255, 149, 0);
 }
 
 #toggle-experience {
